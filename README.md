@@ -1,16 +1,26 @@
-# mcp-datos-cl
+# @pipeworx/datos-cl
 
-datos.gob.cl CKAN MCP.
+[datos.gob.cl](https://datos.gob.cl/) MCP — Chile government CKAN open-data catalogue, keyless.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `package_search` | Full-text + faceted search. |
-| `organization_list` | Publishing orgs. |
-| `tag_list` | Tag list. |
+Same CKAN action surface as other CKAN packs:
+- `package_list(limit?, offset?)`
+- `package_search(q?, fq?, sort?, rows?, start?, facet_field?)`
+- `package_show(id)`
+- `organization_list(all_fields?, limit?, offset?)`
+- `organization_show(id, include_datasets?)`
+- `group_list(all_fields?, limit?, offset?)`
+- `group_show(id, include_datasets?)`
+- `tag_list(query?, all_fields?, vocabulary_id?)`
+- `recently_changed_packages(limit?, offset?)`
+- `resource_show(id)`
+
+## Data source
+
+`https://datos.gob.cl/api/3/action`
 
 ## Quick Start
 
@@ -26,7 +36,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -50,7 +60,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
