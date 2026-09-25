@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-datos-cl",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "datos.gob.cl CKAN MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-435bbbd5aecaad0f59e6ae3b6ad81fbce91ac5a5f836e89dd358a86fbad76e1f",
-    "sourceCommit": "839ab210d969ef7f822cd747ea516f6bb49e9231"
+    "sourceHash": "v1-4964818fcc77f3eb2d63dcd19b9dc5463cea49ff4ae445447a2f37085bea8fc0",
+    "sourceCommit": "56d3c46c09bb3078ffdbdbca992a93f406bcd382"
   }
 }
