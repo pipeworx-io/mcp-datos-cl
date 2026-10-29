@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-datos-cl",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "datos.gob.cl CKAN MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-datos-cl": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "datos-cl"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-datos-cl.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/datos-cl",
   "pipeworx": {
-    "sourceHash": "v1-1569a884868d4660d2b88467f03a5971a4f237d25a99c0496a4677aaa18b54cf",
-    "sourceCommit": "29fb434ca65fe0f61191f19c3502f583f5fb99d7"
+    "mode": "gateway",
+    "slug": "datos-cl",
+    "gatewaySlug": "datos-cl",
+    "sourceHash": "v1-c3bb186f3641c16dbb7fc7f7b7980fd9af7dd47552d6b41ba094a6c8fc9a15ee",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
