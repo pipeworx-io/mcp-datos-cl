@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-datos-cl",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "datos.gob.cl CKAN MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "datos-cl",
     "gatewaySlug": "datos-cl",
-    "sourceHash": "v1-c3bb186f3641c16dbb7fc7f7b7980fd9af7dd47552d6b41ba094a6c8fc9a15ee",
-    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
+    "sourceHash": "v1-49933d2740a19d169163d305334eac90170945402da0abe0970281202c8337ef",
+    "sourceCommit": "e707a4bb6209f432984c0a83bf64b3138130db89"
   }
 }
